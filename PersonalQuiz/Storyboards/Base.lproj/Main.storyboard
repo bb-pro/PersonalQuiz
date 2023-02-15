@@ -94,8 +94,8 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hFz-Xo-YaA">
                                 <rect key="frame" x="0.0" y="92.5" width="320" height="4"/>
                             </progressView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-kQ-OTO">
-                                <rect key="frame" x="16" y="223" width="288" height="168"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-kQ-OTO">
+                                <rect key="frame" x="16" y="200" width="288" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJW-4m-JkG">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34.5"/>
@@ -136,6 +136,7 @@
                             <constraint firstItem="hFz-Xo-YaA" firstAttribute="top" secondItem="H4h-iP-N2G" secondAttribute="top" id="cBV-Kk-t3M"/>
                             <constraint firstItem="H4h-iP-N2G" firstAttribute="trailing" secondItem="aqi-kQ-OTO" secondAttribute="trailing" constant="16" id="eGp-et-Pkx"/>
                             <constraint firstAttribute="trailing" secondItem="hFz-Xo-YaA" secondAttribute="trailing" id="eg4-Iq-urW"/>
+                            <constraint firstItem="aqi-kQ-OTO" firstAttribute="centerY" secondItem="daz-6P-Kem" secondAttribute="centerY" id="hdX-eh-Q1P"/>
                             <constraint firstItem="bqB-0E-m21" firstAttribute="top" secondItem="hFz-Xo-YaA" secondAttribute="bottom" constant="8" id="n0E-sA-IKT"/>
                         </constraints>
                     </view>

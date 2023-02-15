@@ -56,15 +56,47 @@
 		80DBA454299D51E4007E19A4 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				80DBA455299D51E4007E19A4 /* AppDelegate.swift */,
-				80DBA457299D51E4007E19A4 /* SceneDelegate.swift */,
-				80DBA459299D51E4007E19A4 /* ViewController.swift */,
-				80DBA45B299D51E4007E19A4 /* Main.storyboard */,
+				80DBA46C299D607F007E19A4 /* Models */,
+				80DBA46B299D604F007E19A4 /* ViewControllers */,
+				80DBA46A299D6020007E19A4 /* Storyboards */,
+				80DBA469299D5F9B007E19A4 /* App */,
 				80DBA45E299D51E8007E19A4 /* Assets.xcassets */,
-				80DBA460299D51E8007E19A4 /* LaunchScreen.storyboard */,
-				80DBA463299D51E8007E19A4 /* Info.plist */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		80DBA469299D5F9B007E19A4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80DBA455299D51E4007E19A4 /* AppDelegate.swift */,
+				80DBA457299D51E4007E19A4 /* SceneDelegate.swift */,
+				80DBA463299D51E8007E19A4 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80DBA46A299D6020007E19A4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				80DBA45B299D51E4007E19A4 /* Main.storyboard */,
+				80DBA460299D51E8007E19A4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		80DBA46B299D604F007E19A4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80DBA459299D51E4007E19A4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80DBA46C299D607F007E19A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/App/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -319,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/App/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
