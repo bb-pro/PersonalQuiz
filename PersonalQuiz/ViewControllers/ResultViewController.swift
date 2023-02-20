@@ -29,6 +29,9 @@ final class ResultViewController: UIViewController {
 }
 //MARK: - Private Methods
 private extension ResultViewController {
+    /// Shows result of the quiz
+    ///
+    /// Updates the screen and shows the most frequent animal character with definiton
     func showResult() {
         guard let animal = getMostFrequentAnimal() else { return }
         characterLabel.text = "Вы - \(animal.rawValue)"
@@ -36,7 +39,7 @@ private extension ResultViewController {
     }
 
     func getMostFrequentAnimal() -> Animal? {
-        
+    
         var animals: [Animal] = []
         chosenAnswers.forEach { answer in
             animals.append(answer.animal)
