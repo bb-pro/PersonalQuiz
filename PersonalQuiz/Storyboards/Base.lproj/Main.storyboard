@@ -260,11 +260,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="NZ8-V4-lmc">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="19E-4L-9mo">
-                            <connections>
-                                <segue destination="0bh-Mv-VfP" kind="show" id="BQB-U2-Huv"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="19E-4L-9mo"/>
                     </navigationItem>
                     <connections>
                         <outlet property="multipleStackView" destination="OJT-fv-QDi" id="wbF-Vv-yHk"/>
@@ -287,7 +283,7 @@
                         <outletCollection property="multipleSwitches" destination="w6y-W4-9vQ" collectionClass="NSMutableArray" id="rz1-ZD-xeY"/>
                         <outletCollection property="rangedLabels" destination="E1Y-p8-hMB" collectionClass="NSMutableArray" id="RWy-47-Mhi"/>
                         <outletCollection property="rangedLabels" destination="Aip-ou-n9t" collectionClass="NSMutableArray" id="DRD-zu-UAx"/>
-                        <segue destination="0bh-Mv-VfP" kind="show" identifier="showResult" id="UGz-pd-AoG"/>
+                        <segue destination="0bh-Mv-VfP" kind="show" identifier="showResult" id="VOv-vE-EHN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3o-b0-FFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -329,7 +325,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="KGd-Ll-XFp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="QAq-7g-A6P"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="QAq-7g-A6P">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="0bh-Mv-VfP" id="PBp-lJ-xAm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krs-L4-qll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -355,9 +355,6 @@
             <point key="canvasLocation" x="896" y="4"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="UGz-pd-AoG"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
