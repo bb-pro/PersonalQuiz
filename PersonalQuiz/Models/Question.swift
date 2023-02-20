@@ -6,6 +6,7 @@
 //
 
 
+
 struct Question {
     let title: String
     let responseType: ResponseType
@@ -27,9 +28,9 @@ struct Question {
                 title: "Что вам нравится больше?",
                 responseType: .multiple,
                 answers: [
-                    Answer(title: "Плавать", animal: .dog),
+                    Answer(title: "Плавать", animal: .turtle),
                     Answer(title: "Спать", animal: .cat),
-                    Answer(title: "Обниматься", animal: .rabbit),
+                    Answer(title: "Обниматься", animal: .dog),
                     Answer(title: "Есть", animal: .rabbit)
                 ]
             ),

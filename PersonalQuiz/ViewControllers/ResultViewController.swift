@@ -34,7 +34,6 @@ private extension ResultViewController {
         characterLabel.text = "Вы - \(animal.rawValue)"
         definitionLabel.text = animal.definition
     }
-    
 
     func getMostFrequentAnimal() -> Animal? {
         

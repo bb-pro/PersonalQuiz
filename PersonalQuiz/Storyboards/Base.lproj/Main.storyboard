@@ -259,9 +259,7 @@
                             <constraint firstItem="mlY-1o-flV" firstAttribute="trailing" secondItem="OJT-fv-QDi" secondAttribute="trailing" constant="16" id="lqI-KH-64g"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="NZ8-V4-lmc">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="19E-4L-9mo"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="NZ8-V4-lmc"/>
                     <connections>
                         <outlet property="multipleStackView" destination="OJT-fv-QDi" id="wbF-Vv-yHk"/>
                         <outlet property="questionLabel" destination="5Bj-Ee-pD8" id="MlM-IH-M65"/>
