@@ -5,35 +5,44 @@
 //  Created by Bektemur Mamashayev on 15/02/23.
 //
 
-import Foundation
 
 struct Question {
     let title: String
-    let resposeType: ResponseType
+    let responseType: ResponseType
     let answers: [Answer]
     
-    func getQuestions() -> [Question] {
+    static func getQuestions() -> [Question] {
         [
-        Question(
-            title: "Какую пищу вы предпочиаете?",
-            resposeType: .single,
-            answers: [
-                Answer(title: "Стейк", animal: .dog),
-                Answer(title: "Стейк", animal: .dog),
-                Answer(title: "Стейк", animal: .dog),
-                Answer(title: "Стейк", animal: .dog)]
-        ),
-        Question(
-            title: "Что вам нравится больше?",
-            resposeType: .single,
-            answers: []
-        ),
-        Question(
-            title: "Любите ли вы поездки?",
-            resposeType: .single,
-            answers: []
-        )
-        
+            Question(
+                title: "Какую пищу вы предпочитаете?",
+                responseType: .single,
+                answers: [
+                    Answer(title: "Стейк", animal: .dog),
+                    Answer(title: "Рыба", animal: .cat),
+                    Answer(title: "Морковь", animal: .rabbit),
+                    Answer(title: "Кукуруза", animal: .turtle)
+                ]
+            ),
+            Question(
+                title: "Что вам нравится больше?",
+                responseType: .multiple,
+                answers: [
+                    Answer(title: "Плавать", animal: .dog),
+                    Answer(title: "Спать", animal: .cat),
+                    Answer(title: "Обниматься", animal: .rabbit),
+                    Answer(title: "Есть", animal: .rabbit)
+                ]
+            ),
+            Question(
+                title: "Любите ли вы поездки на машине?",
+                responseType: .ranged,
+                answers: [
+                    Answer(title: "Ненавижу", animal: .cat),
+                    Answer(title: "Нервничаю", animal: .rabbit),
+                    Answer(title: "Не замечаю", animal: .turtle),
+                    Answer(title: "Обожаю", animal: .dog)
+                ]
+            )
         ]
     }
 }
@@ -52,20 +61,19 @@ struct Answer {
 enum Animal: Character {
     case dog = "🐶"
     case cat = "🐱"
-    case turtle = "🐢"
     case rabbit = "🐰"
+    case turtle = "🐢"
     
-    var definiton: String {
+    var definition: String {
         switch self {
-            
         case .dog:
-            return ""
+            return "Вам нравится быть с друзьями. Вы окружаете себя людьми, которые вам нравятся и всегда готовы помочь."
         case .cat:
-            return ""
-        case .turtle:
-            return ""
+            return "Вы себе на уме. Любите гулять сами по себе. Вы цените одиночество."
         case .rabbit:
-            return ""
+            return "Вам нравится все мягкое. Вы здоровы и полны энергии."
+        case .turtle:
+            return "Ваша сила - в мудрости. Медленный и вдумчивый выигрывает на больших дистанциях."
         }
     }
 }

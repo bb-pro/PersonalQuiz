@@ -25,7 +25,7 @@ final class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateUI()
     }
     
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
@@ -39,4 +39,17 @@ final class QuestionViewController: UIViewController {
     
 }
 
- 
+
+//MARK: - Private Methods
+private extension QuestionViewController {
+    /// Update UI
+    ///
+    /// Refreshing the user interface after the next user response and
+    /// when the application is launched
+    func updateUI() {
+        for stackView in [singleStackView, multipleStackView, rangedStackView] {
+            stackView?.isHidden = true
+        }
+
+    }
+}
