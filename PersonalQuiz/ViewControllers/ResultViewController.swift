@@ -57,5 +57,7 @@ private extension ResultViewController {
             }
         }
         return mostFrequentAnimal
+        
+        
     }
 }
