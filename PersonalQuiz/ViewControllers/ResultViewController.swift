@@ -40,10 +40,8 @@ private extension ResultViewController {
 
     func getMostFrequentAnimal() -> Animal? {
     
-        var animals: [Animal] = []
-        chosenAnswers.forEach { answer in
-            animals.append(answer.animal)
-        }
+        let animals: [Animal] = chosenAnswers.map { $0.animal }
+        
         
         var animalCountDict: [Animal: Int] = [:]
         var mostFrequentAnimal: Animal?
