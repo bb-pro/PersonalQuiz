@@ -41,8 +41,6 @@ private extension ResultViewController {
     func getMostFrequentAnimal() -> Animal? {
     
         let animals: [Animal] = chosenAnswers.map { $0.animal }
-        
-        
         var animalCountDict: [Animal: Int] = [:]
         var mostFrequentAnimal: Animal?
         var maxCount = 0
